@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Como melhorar o Brasileirão</h1>
+    <p id="description">Obrigado pela ajuda</p>
+    <form id="survey-form">
+        <div class="input-element">
+            <label id="name-label">
+                Nome:
+                <input type="text" id="name" required placeholder="Coloque seu nome">
+            </label>
+        </div>
+        <div class="input-element">
+            <label id="email-label">
+                E-mail:
+                <input type="email" id="email" required placeholder="Coloque seu email">
+            </label>
+        </div>
+        <div class="input-element">
+            <label id="number-label">
+                Idade:
+                <input type="number" min="5" max="110" id="number" required placeholder="Coloque sua idade">
+            </label>
+        </div>
+        <div class="input-element">
+            <label id="select-label">
+                Qual a divisão seu time está?
+            </label>
+            <select id="dropdown">
+                <option>Série A</option>
+                <option>Série B</option>
+                <option>Série C</option>
+                <option>Série D</option>
+            </select>
+        </div>
+        <label>Você costuma a ir no estádio?</label>
+        <div><label><input type="radio" name="stadium" id="stadium-radio" value="sim">Sim</label></div>
+        <div><label><input type="radio" name="stadium" id="stadium-radio" value="não">Não</label></div>
+        <label>Você prefere jogos durante o período</label>
+        <div><label><input type="checkbox" name="games" id="stadium-checkbox" value="manhã">Manhã</label></div>
+        <div><label><input type="checkbox" name="games" id="stadium-checkbox" value="tarde">Tarde</label></div>
+        <div><label><input type="checkbox" name="games" id="stadium-checkbox" value="noite">Noite</label></div>
+        <div>
+            <label for="">Comentário</label>
+            <div><textarea name="" id="ideias-textarea" cols="30" rows="10"></textarea></div>
+        </div>
+        <button type="submit" id="submit">
+            Enviar
+        </button>
+    </form>
+</body>
+</html>
