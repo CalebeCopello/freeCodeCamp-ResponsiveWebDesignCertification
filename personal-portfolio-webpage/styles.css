@@ -1,0 +1,10 @@
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+#navbar {
+    display: flex;
+    top: 0;
+    position: fixed;
+}
